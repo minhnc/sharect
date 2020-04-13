@@ -1,4 +1,5 @@
 import ShareButton from '../Button/ShareButton/ShareButton'
+import CustomShareButton from '../Button/ShareButton/CustomShareButton'
 
 export default function getIcons({networks, customShareButtons}) {
   const icons = document.createElement('div')
@@ -12,7 +13,7 @@ export default function getIcons({networks, customShareButtons}) {
   }
   if (customShareButtons.length > 0) {
     customShareButtons.forEach(btn => {
-      icons.appendChild(ShareButton(btn.icon, btn.url))
+      icons.appendChild(CustomShareButton(btn.icon, btn.onClick))
       length++
     })
   }
