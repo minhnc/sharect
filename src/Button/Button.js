@@ -1,7 +1,7 @@
 import style from './style'
 
 function handleMouseOver() {
-  this.style.transform = 'scale(1.2)'
+  this.style.transform = 'scale(1.1)'
 }
 
 function handleMouseOut() {
