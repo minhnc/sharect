@@ -21,6 +21,8 @@ export default function Tooltip(props) {
 
   tooltip.appendChild(icons.icons)
 
+  // Remove Arrow
+  /*
   const arrow = Arrow({
     arrowSize,
     backgroundColor,
@@ -29,6 +31,7 @@ export default function Tooltip(props) {
   })
 
   tooltip.appendChild(arrow)
+  */
 
   return tooltip
 }
