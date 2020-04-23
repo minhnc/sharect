@@ -1,7 +1,7 @@
 import style from './style'
 
 function handleMouseOver() {
-  this.style.transform = 'scale(1.1)'
+  this.style.transform = 'scale(1.2)'
 }
 
 function handleMouseOut() {
@@ -15,8 +15,10 @@ export default function createButton(icon, handleMouseDown) {
 
   if (handleMouseDown) {
     btn.onmousedown = handleMouseDown
-    btn.onmouseover = handleMouseOver
-    btn.onmouseout = handleMouseOut
+
+    // comment out scaleing effect
+    // btn.onmouseover = handleMouseOver
+    // btn.onmouseout = handleMouseOut
   } else {
     // Style for non-action button .i.e separator |
     btn.style.cssText = 'display:inline-block;'
