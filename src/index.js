@@ -22,9 +22,9 @@ export default (function () {
   let _backgroundColor = '#333'
   let _iconColor = '#fff'
 
-  let _arrowSize = 5
+  let _arrowSize = -5 // 5
   let _buttonMargin = 7 * 2
-  let _iconSize = 24
+  let _iconSize = 52 // 24
 
   function config(o) {
     if (o.twitter !== undefined) _networks.twitter.isActive = o.twitter
